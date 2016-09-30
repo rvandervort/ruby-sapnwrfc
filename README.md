@@ -17,15 +17,16 @@ After you have unpacked your kit, you should have all the files listed
 in the MANIFEST.
 
 In brief, the following should work on most systems:
-  ruby setup.rb 
+  `ruby setup.rb` 
 
 if your rfcsdk is not findable in the system search path, then use the command line switches
 for mkmf/setup.rb like so:
+```
 ruby setup.rb config  --with-nwrfcsdk-dir=/path/to/rfcsdk
 ruby setup.rb setup
-
+```
 Now you can either install like so:
-ruby setup.rb install
+`ruby setup.rb install`
 
 or build the gem and install that like so:
 
@@ -38,6 +39,7 @@ gem install sapnwrfc-<version>-<architecture>.gem
 
 VERY IMPORTANT - make sure that you add the library path to LD_LIBRARY_PATH
 eg - mine is:
+
  `export LD_LIBRARY_PATH=/home/piers/code/sap/nwrfcsdk/lib`
 
 ## Documents and Tests
@@ -63,6 +65,8 @@ One last thing - The SAP RFCSDK is a prerequisite for this perl package to work.
 # Other stuff
 
 Author::   Piers Harding <piers@ompka.net>
+
 Requires:: Ruby 1.8.x or later
+
 License::  Copyright (c) 2006-2010 Piers Harding
            Released under Ruby's License
